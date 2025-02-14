@@ -1,4 +1,7 @@
 # Jakanode-bot Project
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![pylint](https://img.shields.io/github/actions/workflow/status/juanjo78git/jakanode-bot/pylint.yml?branch=main&label=pylint&logo=python)
+![Version](https://img.shields.io/github/v/release/juanjo78git/jakanode-bot)
 
 A robust and versatile Telegram bot built with Python, designed to streamline automation and enhance user interaction.
 
