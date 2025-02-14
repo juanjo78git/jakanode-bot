@@ -1,0 +1,5 @@
+[MASTER]
+init-hook='import sys; sys.path.append(".")'
+additional-builtins=_
+module-rgx=[a-z0-9_-]*$
+

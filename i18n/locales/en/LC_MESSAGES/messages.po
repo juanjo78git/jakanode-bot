@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jakanode 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-11 17:13+0100\n"
+"PO-Revision-Date: 2025-02-04 15:31+0000\n"
+"Last-Translator: Tu Nombre <tu@email.com>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: exceptions/error_handler.py:36
+msgid "An unexpected error occurred. Please try again later."
+msgstr "An unexpected error occurred. Please try again later."
+
+#: exceptions/error_handler.py:64 bot/handlers/default_handler.py:27
+#: validators/user_validator.py:46 validators/admin_validator.py:46
+msgid "Access denied."
+msgstr "Access denied."
+
+#: bot/actions/referrals_actions.py:28
+msgid ""
+"Here are your referral links:\n"
+"\n"
+msgstr ""
+"Here are your referral links:\n"
+"\n"
+
+#: bot/actions/referrals_actions.py:62
+msgid "Request registered"
+msgstr "Request registered"
+
+#: bot/actions/donations_actions.py:37
+#, python-brace-format
+msgid ""
+"You can send donations to the following Lightning Address: [{address}]"
+"({link})"
+msgstr ""
+"You can send donations to the following Lightning Address: [{address}]"
+"({link})"
+
+#: bot/actions/donations_actions.py:40 bot/actions/donations_actions.py:49
+#, python-brace-format
+msgid ""
+"Alternatively, you can donate through this web link: [{url_name}]({url})"
+msgstr ""
+"Alternatively, you can donate through this web link: [{url_name}]({url})"
+
+#: bot/actions/donations_actions.py:42
+msgid "Thank you for your donation!"
+msgstr "Thank you for your donation!"
+
+#: bot/actions/donations_actions.py:46
+#, python-brace-format
+msgid "You can send your donation via this Lightning link: [{address}]({link})"
+msgstr "You can send your donation via this Lightning link: [{address}]({link})"
+
+#: bot/actions/donations_actions.py:51
+#, python-brace-format
+msgid "Thank you for your donation of {amount}!"
+msgstr "Thank you for your donation of {amount}!"
+
+#: bot/actions/admin_actions.py:30
+msgid ""
+"User list:\n"
+"\n"
+msgstr ""
+"User list:\n"
+"\n"
+
+#: bot/actions/admin_actions.py:33
+#, python-brace-format
+msgid ""
+"ID: {id}\n"
+"Telegram ID: {telegramid}\n"
+"Username: {username}\n"
+"Status: {status}\n"
+"Admin: {admin}\n"
+"\n"
+msgstr ""
+"ID: {id}\n"
+"Telegram ID: {telegramid}\n"
+"Username: {username}\n"
+"Status: {status}\n"
+"Admin: {admin}\n"
+"\n"
+
+#: bot/actions/admin_actions.py:49 bot/actions/admin_actions.py:82
+msgid "No users found."
+msgstr "No users found."
+
+#: bot/actions/admin_actions.py:110
+msgid "No scripts found."
+msgstr "No scripts found."
+
+#: bot/actions/admin_actions.py:137 bot/handlers/admin_handler.py:86
+msgid "Unrecognized command."
+msgstr "Unrecognized command."
+
+#: bot/handlers/admin_handler.py:51
+msgid "Accessing admin section..."
+msgstr "Accessing admin section..."
+
+#: bot/handlers/admin_handler.py:65
+msgid "Incorrect number of parameters."
+msgstr "Incorrect number of parameters."
+
+#: bot/handlers/admin_handler.py:82
+msgid "Command recognized, but no valid function associated."
+msgstr "Command recognized, but no valid function associated."
+
+#: bot/handlers/start_handler.py:30
+msgid "Hello! I am the jakanode bot."
+msgstr "Hello! I am the jakanode bot."
+
+#: bot/handlers/help_handler.py:31
+msgid "This is the help text. Use /start to begin."
+msgstr "This is the help text. Use /start to begin."
+
+#: services/script_service.py:74
+#, python-brace-format
+msgid "Error executing script {script_name}: "
+msgstr "Error executing script {script_name}: "
+
+#: services/script_service.py:80
+msgid "Command not recognized."
+msgstr "Command not recognized."

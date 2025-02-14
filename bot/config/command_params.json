@@ -1,0 +1,35 @@
+{
+    "admin": {
+        "users": {
+            "params": [],
+            "function": "users_list",
+            "desc": "List users"
+        },
+        "user": {
+            "params": ["telegram_id"],
+            "function": "user_detail",
+            "desc" : "User details"
+        },
+        "scripts": {
+            "params": [],
+            "function": "exec_list",
+            "desc" : "List scripts"
+        },
+        "run": {
+            "params": ["script_name"],
+            "function": "exec_script",
+            "desc": "Run script"
+        },
+        "new_referral": {
+            "params": ["name", "url"],
+            "function": "new_referral",
+            "desc": "Add new referral"
+        }
+    },
+    "help": {},
+    "start": {
+        "language": {
+            "params": []
+        }
+    }
+}
