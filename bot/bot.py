@@ -2,7 +2,6 @@
 Telegram bot
 """
 
-from telegram import BotCommand
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
 from bot.handlers import (
