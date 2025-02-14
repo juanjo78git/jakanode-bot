@@ -214,3 +214,66 @@ To generate and update translations, follow these steps:
     msgfmt i18n/locales/en/LC_MESSAGES/messages.po -o i18n/locales/en/LC_MESSAGES/messages.mo 
     ```
     The `.mo files are the ones jakanode-bot will use to load translations at runtime.
+
+## Features
+
+### Admin Features
+
+**Only the admin can execute these commands**
+These commands are exclusively available to the bot admin. 
+For security reasons, admin options are concealed in the Telegram menu to prevent unauthorized access.
+
+#### Script Management
+
+These scripts can be triggered via the Telegram bot to automate various tasks.
+
+##### Available Scripts
+
+You can view the available scripts by using the command `/admin scripts`.
+
+- `test.sh`: A test script to ensure that the bash script can be executed successfully.
+
+- `system-info.sh`: Provides information about the system's status.
+- `nginx-restart.sh`: Restarts the web server in a controlled manner.
+- `system-restart.sh`: Restarts the system in a controlled manner.
+- `system-stop.sh`: Shuts down the system safely.
+
+- `bot-log.sh`: Displays the bot's logs to help diagnose any issues.
+- `bot-restart.sh`: Restarts the bot service (SERVICE_NAME).
+- `bot-stop.sh`: Stops the bot service (SERVICE_NAME).
+- `bot-deploy.sh`: Deploys new versions to production environment (DEV -> PROD).
+
+- `git-status.sh`: Shows the current status of the local repository (DEV).
+- `code-quality.sh`: Checks the code quality in the local repository (DEV).
+- `git-pull.sh`: Updates the local repository with the latest changes from the remote repository (DEV).
+- `git-commit.sh`: Performs a commit in the local repository (DEV).
+- `git-push.sh`: Pushes local changes to the remote repository (DEV).
+
+To run any script, use the command `/admin run SCRIPT_NAME`.
+
+#### User Management
+
+These commands allow you to manage and view information about system users.
+
+- `/admin users`: Lists all users on the system.
+- `/admin user TELEGRAM_ID`: Displays detailed information about the user with the specified Telegram ID (`XXX`).
+
+#### Referrals Management
+
+These commands allow you to manage and view information about system users.
+
+- `/admin new_referral REFERRAL_NAME REFERRAL_URL`: Adds a new referral link by specifying the referral's name and URL.
+
+
+### Public Features
+
+#### Bot Commands
+
+These are commands available for all users to interact with the bot.
+
+- `/start`: Initializes the bot and saves the user.
+- `/help`: Displays the help information about the bot and how to use its features.
+- `/donate`: Shows how to make a donation to support the bot. 
+  Donations can be made via the Lightning Network. 
+  You can optionally specify an amount (e.g., `/donate 10`).
+- `/referrals`: Displays referral links that you can share with others to earn rewards.
