@@ -31,7 +31,7 @@ ADMIN_USER_ID = int(os.getenv("ADMIN_USER_ID", "-1"))
 # Logging configuration
 DEBUG = os.getenv("DEBUG", "False").lower() in ["true", "1", "yes"]
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
-LOG_FILE = "logs/jakanode_logs.log"
+LOG_FILE = os.getenv("LOG_FILE", "logs/jakanode_bot.log")
 
 # Service and Deploy
 SERVICE_NAME = os.getenv("SERVICE_NAME", "jakanode-bot")
