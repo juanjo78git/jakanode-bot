@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The name of the service to stop
-SERVICE="${SERVICE_NAME:-jakanode-bot}"
+SERVICE="${BACK_SERVICE_NAME:-jakanode-back}"
 
 # Check if the service is running
 if systemctl is-active --quiet $SERVICE; then

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Step 0: Check if required environment variables or params are set
-default_service_name="$SERVICE_NAME"
-default_dev_dir="$DEV_DIR"
-default_prod_dir="$PROD_DIR"
+default_service_name="$FRONT_SERVICE_NAME"
+default_dev_dir="$FRONT_DEV_DIR"
+default_prod_dir="$FRONT_PROD_DIR"
 
 SERVICE_NAME="${1:-$default_service_name}"
 DEV_DIR="${2:-$default_dev_dir}"
@@ -53,7 +53,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Step 5: Restart the bot service
+# Step 5: Restart the service
 echo "Restarting service: $SERVICE_NAME..."
 sudo systemctl restart "$SERVICE_NAME"
 if [ $? -ne 0 ]; then

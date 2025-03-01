@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The name of the service to manage
-SERVICE="${SERVICE_NAME:-jakanode-bot}"
+SERVICE="${BACK_SERVICE_NAME:-jakanode-back}"
 
 # Check if the service is active
 if systemctl is-active --quiet $SERVICE; then
