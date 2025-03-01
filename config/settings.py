@@ -34,11 +34,19 @@ LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 LOG_FILE = os.getenv("LOG_FILE", "logs/jakanode_bot.log")
 
 # Service and Deploy
+USER_NAME = os.getenv("USER", "") # os.getlogin()
+# Bot
 SERVICE_NAME = os.getenv("SERVICE_NAME", "jakanode-bot")
-# USER_NAME = os.getenv("USER", os.getlogin())
-USER_NAME = os.getenv("USER", "")
 DEV_DIR = os.getenv("DEV_DIR", f"/home/{USER_NAME}/jakanode-bot")
 PROD_DIR = os.getenv("PROD_DIR", "/opt/jakanode-bot")
+# Back
+BACK_SERVICE_NAME = os.getenv("BACK_SERVICE_NAME", "jakanode-back")
+BACK_DEV_DIR = os.getenv("BACK_DEV_DIR", f"/home/{USER_NAME}/jakanode-back")
+BACK_PROD_DIR = os.getenv("BACK_PROD_DIR", "/opt/jakanode-back")
+# Front
+FRONT_SERVICE_NAME = os.getenv("FRONT_SERVICE_NAME", "jakanode-front")
+FRONT_DEV_DIR = os.getenv("FRONT_DEV_DIR", f"/home/{USER_NAME}/jakanode-front")
+FRONT_PROD_DIR = os.getenv("FRONT_PROD_DIR", "/opt/jakanode-front")
 
 # Donations
 DONATION_LN_ADDRESS = os.getenv("DONATION_LN_ADDRESS", "jakanode@lnurl")
