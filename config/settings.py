@@ -34,7 +34,7 @@ LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO")
 LOG_FILE = os.getenv("LOG_FILE", "logs/jakanode_bot.log")
 
 # Service and Deploy
-USER_NAME = os.getenv("USER", "") # os.getlogin()
+USER_NAME = os.getenv("USER", "")  # os.getlogin()
 # Bot
 SERVICE_NAME = os.getenv("SERVICE_NAME", "jakanode-bot")
 DEV_DIR = os.getenv("DEV_DIR", f"/home/{USER_NAME}/jakanode-bot")
