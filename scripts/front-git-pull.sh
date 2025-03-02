@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Name of the branch to update
-BRANCH="master"
+BRANCH="main"
 
-default_dev_dir="$DEV_DIR"
+default_dev_dir="$FRONT_DEV_DIR"
 
 REPO_DIR="${1:-$default_dev_dir}"
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Name of the branch to update
-BRANCH="master"
+BRANCH="main"
 
 default_dev_dir="$DEV_DIR"
 

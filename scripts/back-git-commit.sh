@@ -3,7 +3,7 @@
 # Commit message
 COMMIT_MSG="Updated from script"
 
-default_dev_dir="$DEV_DIR"
+default_dev_dir="$BACK_DEV_DIR"
 
 REPO_DIR="${1:-$default_dev_dir}"
 
